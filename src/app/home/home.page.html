@@ -1,0 +1,15 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            Multicines Cáceres
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-slides [options]="slideOpts" [pager]="false">
+        <ion-slide *ngFor="let slide of slides">
+            <app-slide [slideInfo]="slide"></app-slide>
+        </ion-slide>
+    </ion-slides>
+</ion-content>

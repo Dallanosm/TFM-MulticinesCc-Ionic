@@ -1,0 +1,17 @@
+/* Top right text */
+.classification {
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
+
+.classification p {
+  color: white;
+}
+
+.classification span {
+  background-color: green;
+  padding: 6px 12px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+}
