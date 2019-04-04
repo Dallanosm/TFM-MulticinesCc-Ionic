@@ -1,17 +1,25 @@
 /* Top right text */
 .classification {
   position: absolute;
-  top: 8px;
+  top: 24px;
   right: 0;
 }
 
-.classification p {
-  color: white;
-}
-
-.classification span {
+.classification > span {
   background-color: green;
   padding: 6px 12px;
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
+  color: white;
+}
+
+.carousel {
+  display: block;
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+}
+
+.carousel > img {
+  display: block;
 }

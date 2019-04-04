@@ -1,13 +1,12 @@
-<img src={{slideInfo.img}}>
+<div class="carousel">
+    <img routerLink="/movies/{{slideInfo.id}}" src={{slideInfo.img}}>
 
-<p>
-    {{slideInfo.title}}
-</p>
-
-<div class="classification">
-    <p>
+    <div class="classification">
         <span>
             {{slideInfo.ratio}}
         </span>
-    </p>
+    </div>
 </div>
+<p>
+    {{slideInfo.title}}
+</p>
