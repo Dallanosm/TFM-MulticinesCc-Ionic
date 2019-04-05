@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {SliderModel} from '../../core/models/slider.model';
+import {MovieModel} from '../../core/models/movieModel';
 
 @Component({
   selector: 'app-slide',
@@ -8,7 +8,7 @@ import {SliderModel} from '../../core/models/slider.model';
 })
 export class SlideComponent implements OnInit {
 
-  @Input() slideInfo: SliderModel;
+  @Input() slideInfo: MovieModel;
 
   constructor() { }
 
