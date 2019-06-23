@@ -1,0 +1,14 @@
+.image-background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 500px;
+  width: 100%;
+
+  display: block;
+
+  -webkit-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}

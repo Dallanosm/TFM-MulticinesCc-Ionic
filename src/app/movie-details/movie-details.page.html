@@ -1,9 +1,12 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>movieDetails</ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>{{movieDetail.title}}</ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+    <img class="image-background" src="{{movieDetail.image}}">
+    <img class="image" src="{{movieDetail.image}}">
+    <ion-button [href]="movieDetail.trailer" color="primary">Ver trailer</ion-button>
+    <ion-text>{{movieDetail.classification}}</ion-text>
 </ion-content>
