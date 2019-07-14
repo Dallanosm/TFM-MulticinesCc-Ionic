@@ -4,9 +4,30 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content>
-    <img class="image-background" src="{{movieDetail.image}}">
-    <img class="image" src="{{movieDetail.image}}">
-    <ion-button [href]="movieDetail.trailer" color="primary">Ver trailer</ion-button>
-    <ion-text>{{movieDetail.classification}}</ion-text>
+<ion-content class="content">
+    <div id="bg"
+         style='background-image: url("https://bizcochito.es/Films/Poster/48412.jpg")'>
+    </div>
+
+    <div id="header">
+        <div id="trailer">
+            <span>Ver trailer</span>
+            <img src="http://llanosmunoz.com/play.png">
+        </div>
+        <img id="cover" src="{{movieDetail.image}}">
+    </div>
+
+    <div id="info">
+        <h1 id="title">{{movieDetail.title}}</h1>
+
+        <p id="sinopsis"> {{movieDetail.sinopsis}}</p>
+
+        <ion-chip *ngFor="let schedule of movieDetail.tickets">{{schedule.time}}</ion-chip>
+
+
+    </div>
+
+    <div id="comments">
+        Ver comentarios
+    </div>
 </ion-content>

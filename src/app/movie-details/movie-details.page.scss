@@ -1,14 +1,87 @@
-.image-background {
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  height: 500px;
+body, html {
   width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
 
+ion-content {
+  --ion-background-color: #292929;
+}
+
+#bg {
+  width: 100%;
+  height: 420px;
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  overflow: hidden;
+
+  position: absolute;
+
+  z-index: 0;
+}
+
+#header {
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+#header #cover {
+  width: 60%;
+  margin: 10px auto;
+  text-align: center;
   display: block;
 
-  -webkit-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px black;
+}
+
+#trailer {
+  background: #F4511E;
+  color: white;
+  width: 130px;
+  position: absolute;
+  z-index: 2;
+  border-radius: 0px 15px 15px 0px;
+  margin-top: 260px;
+  padding: 5px;
+
+}
+
+#trailer img {
+  padding-left: 5px;
+  vertical-align: middle;
+}
+
+#title {
+  color: white;
+}
+
+#sinopsis {
+  color: white;
+}
+
+#info {
+  padding: 10px;
+  margin-top: 30px;
+}
+
+ion-chip {
+  --background: #F4511E;
+}
+
+#comments {
+  text-align: center;
+  padding: 14px;
+  width: 100%;
+  background-color: #F4511E;
+  color: black;
 }
